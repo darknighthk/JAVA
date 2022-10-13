@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <bean id="book1" class="Book">  
+    	<constructor-arg value="War and Peace"></constructor-arg>  
+		<constructor-arg value="Fiction novel based on war times romance"></constructor-arg>  
+		<constructor-arg value="432"></constructor-arg>  
+		<constructor-arg value="Fiction"></constructor-arg>  
+		<constructor-arg value="Leo Tolstoy"></constructor-arg>  
+	</bean>  
+	<bean id="book2" class="Book">  
+		<constructor-arg value="Brave New World"></constructor-arg>  
+		<constructor-arg value="Science Fiction Novel"></constructor-arg>  
+		<constructor-arg value="289"></constructor-arg>  
+		<constructor-arg value="SciFi"></constructor-arg>  
+		<constructor-arg value="Aldous Huxley"></constructor-arg>  
+	</bean>
+	<bean id="book3" class="Book">  
+	 
+		<constructor-arg value="Gone Girl"></constructor-arg>  
+		<constructor-arg value="Suspense Thriller Novel"></constructor-arg>  
+		<constructor-arg value="805"></constructor-arg>  
+		<constructor-arg value="Thriller"></constructor-arg>  
+		<constructor-arg value="Gillian Flynn"></constructor-arg> 
+	</bean>  
+	 
+	<bean id="book4" class="Book">   
+		<constructor-arg value="Murder on the Orient Express"></constructor-arg>  
+		<constructor-arg value="Murder Mystery and Detective Novel"></constructor-arg>  
+		<constructor-arg value="988"></constructor-arg>  
+		<constructor-arg value="Murder Mystery"></constructor-arg>  
+		<constructor-arg value="Agatha Christie"></constructor-arg> 
+	</bean>  
+	<bean id="book5" class="Book">   
+		<constructor-arg value="The Shining"></constructor-arg>  
+		<constructor-arg value="Best selling psychological horror fiction novel"></constructor-arg>  
+		<constructor-arg value="1199"></constructor-arg>  
+		<constructor-arg value="Horror Thriller"></constructor-arg>  
+		<constructor-arg value="Stephen King"></constructor-arg> 
+	</bean> 
+	<bean id="book6" class="Book">  
+		<constructor-arg value="The Notebook"></constructor-arg>  
+		<constructor-arg value="Best selling romance fiction novel"></constructor-arg>  
+		<constructor-arg value="749"></constructor-arg>  
+		<constructor-arg value="Romance"></constructor-arg>  
+		<constructor-arg value="Nicholas Sparks"></constructor-arg>  
+	</bean>  
+	<bean id="book7" class="Book">  
+		<constructor-arg value="The Wedding Date"></constructor-arg>  
+		<constructor-arg value="Contemporary romance novel"></constructor-arg>  
+		<constructor-arg value="349"></constructor-arg>  
+		<constructor-arg value="Romcom"></constructor-arg>  
+		<constructor-arg value="Jasmine Guillory"></constructor-arg>  
+	</bean>
+	<bean id="book8" class="Book">  
+		<constructor-arg value="Bossypants"></constructor-arg>  
+		<constructor-arg value="Humour autobiography novel"></constructor-arg>  
+		<constructor-arg value="357"></constructor-arg>  
+		<constructor-arg value="Comedy"></constructor-arg>  
+		<constructor-arg value="Tina Fey"></constructor-arg> 
+	</bean>  
+	<bean id="book9" class="Book">  
+		<constructor-arg value="The Stupidest Angel"></constructor-arg>  
+		<constructor-arg value="Humour Horror Fantasy Christmas Story"></constructor-arg>  
+		<constructor-arg value="285"></constructor-arg>  
+		<constructor-arg value="Horror Comedy"></constructor-arg>  
+		<constructor-arg value="Christopher Moore"></constructor-arg> 
+	</bean>
+
+    <bean id="package1" class="StandardPackage">  
+		<constructor-arg value="Fiction Novel Pack"></constructor-arg>  
+		<constructor-arg value="Available"></constructor-arg>  
+		<constructor-arg>  
+		<list>  
+			<ref bean="book1"/>  
+			<ref bean="book2"/>  
+		</list>  
+		</constructor-arg>  
+	</bean> 
+	<bean id="package2" class="StandardPackage">  
+		<constructor-arg value="Mystery Thriller Pack"></constructor-arg>  
+		<constructor-arg value="Available"></constructor-arg>  
+		<constructor-arg>  
+		<list>  
+			<ref bean="book3"/>  
+			<ref bean="book4"/> 
+			<ref bean="book5"/>   
+		</list>  
+		</constructor-arg>  
+	</bean>  
+    <bean id="package3" class="StandardPackage">  
+		<constructor-arg value="Comedy Romance Pack"></constructor-arg>  
+		<constructor-arg value="Available"></constructor-arg>  
+		<constructor-arg>  
+		<list>  
+			<ref bean="book6"/>  
+			<ref bean="book7"/>  
+			<ref bean="book8"/>  
+			<ref bean="book9"/>  
+		</list>  
+		</constructor-arg>  
+	</bean> 
+</beans>

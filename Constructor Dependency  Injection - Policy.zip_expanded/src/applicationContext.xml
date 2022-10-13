@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <bean id="policy1" class="Policy">  
+        <constructor-arg value="PCIPY1"></constructor-arg>  
+    	<constructor-arg value="62000"></constructor-arg>  
+		<constructor-arg value="10"></constructor-arg> 
+    <!-- Fill your code here -->  
+    <constructor-arg ref="customer1"/>
+	</bean>  
+	<bean id="policy2" class="Policy">  
+		<constructor-arg value="PCIPY2"></constructor-arg>  
+		<constructor-arg value="100000"></constructor-arg>  
+		<constructor-arg value="20"></constructor-arg> 
+    <!-- Fill your code here -->  
+    <constructor-arg ref="customer1"/>
+	</bean>
+	<bean id="policy3" class="Policy">  
+		<constructor-arg value="PCIPY3"></constructor-arg>  
+		<constructor-arg value="45000"></constructor-arg>  
+		<constructor-arg value="18"></constructor-arg>  
+    <!-- Fill your code here -->  
+    <constructor-arg ref="customer2"/>
+	</bean>  
+	 
+	<bean id="policy4" class="Policy">   
+		<constructor-arg value="PCIPY4"></constructor-arg>  
+		<constructor-arg value="150000"></constructor-arg>  
+		<constructor-arg value="15"></constructor-arg>  
+    <!-- Fill your code here -->  
+    <constructor-arg ref="customer2"/>
+	</bean>  
+	<bean id="policy5" class="Policy">   
+		<constructor-arg value="PCIPY5"></constructor-arg>  
+		<constructor-arg value="38000"></constructor-arg>  
+		<constructor-arg value="18"></constructor-arg> 
+    <!-- Fill your code here -->  
+    <constructor-arg ref="customer2"/>
+	</bean> 
+	<bean id="policy6" class="Policy">  
+		<constructor-arg value="PCIPY6"></constructor-arg>  
+		<constructor-arg value="58000"></constructor-arg>  
+		<constructor-arg value="16"></constructor-arg>  
+    <!-- Fill your code here -->  
+    <constructor-arg ref="customer3"/>
+	</bean>  
+	<bean id="policy7" class="Policy">  
+		<constructor-arg value="PCIPY7"></constructor-arg>  
+		<constructor-arg value="90000"></constructor-arg>  
+		<constructor-arg value="20"></constructor-arg>  
+    <!-- Fill your code here -->  
+    <constructor-arg ref="customer3"/>
+	</bean>
+	<bean id="policy8" class="Policy">  
+		<constructor-arg value="PCIPY8"></constructor-arg>  
+		<constructor-arg value="64000"></constructor-arg>  
+		<constructor-arg value="18"></constructor-arg> 
+    <!-- Fill your code here -->  
+    <constructor-arg ref="customer3"/>
+	</bean>  
+    <bean id="policy9" class="Policy">  
+		<constructor-arg value="PCIPY9"></constructor-arg>  
+		<constructor-arg value="205000"></constructor-arg>  
+		<constructor-arg value="19"></constructor-arg>  
+    <!-- Fill your code here -->  
+    <constructor-arg ref="customer3"/>
+	</bean>
+
+    <bean id="customer1" class="Customer">  
+		<constructor-arg value="PCICAJOH1"></constructor-arg>  
+    	<constructor-arg value="John"></constructor-arg>   
+    	<constructor-arg value="john@gmail.com"></constructor-arg>   
+        <constructor-arg value="8678524698"></constructor-arg> 
+	</bean> 
+	<bean id="customer2" class="Customer">  
+		<constructor-arg value="PCICASAR2"></constructor-arg>  
+		<constructor-arg value="Sara"></constructor-arg>  
+        <constructor-arg value="sara@gmail.com"></constructor-arg> 
+        <constructor-arg value="9873491911"></constructor-arg> 
+	</bean>  
+    <bean id="customer3" class="Customer">  
+		<constructor-arg value="PCICASAN3"></constructor-arg>  
+		<constructor-arg value="Sandra"></constructor-arg>  
+        <constructor-arg value="sandra@gmail.com"></constructor-arg> 
+        <constructor-arg value="8608457416"></constructor-arg> 
+	</bean> 
+</beans>
+
